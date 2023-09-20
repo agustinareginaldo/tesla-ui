@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LandingHeader from '../components/LandingHeader.astro';
+import HeroSection from '../components/HeroSection.astro'
+import ModelY from '../components/ModelY.astro'
+import ModelS from '../components/ModelS.astro'
+import ModelX from '../components/ModelX.astro'
+import Experience from '../components/Experience.astro';
+---
+
+<Layout title="Electric Cars, Solar & Clean Energy | Tesla">
+	<LandingHeader />
+
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+		<div class="snap-center">
+			<HeroSection />
+		</div>
+		<div class="snap-center">
+			<ModelY />
+		</div>
+		<div class="snap-center">
+			<ModelS />
+		</div>
+		<div class="snap-center">
+			<ModelX />
+		</div>
+		<div class="snap-center">
+			<Experience />
+		</div>
+	</main>
+</Layout>
